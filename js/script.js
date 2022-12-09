@@ -11,13 +11,17 @@
  */
 
 if (navigator.serviceWorker) {
-  navigator.serviceWorker.register("/ICS2O-Template-PWA/sw.js", {
-    scope: "/ICS2O-Template-PWA/",
+  navigator.serviceWorker.register("/ICS2O-Unit6-02-JS/sw.js", {
+    scope: "/ICS2O-Unit6-02-JS/",
   })
 }
 
-// function description
+function count() {
+  console.log("click")
+  let count = localStorage.getItem("number");
+  count++
+  localStorage.setItem("number", count);
+  console.log(count)
 
-function myButtonClicked() {
-  document.getElementById("hello-world").innerHTML = "<p>Hello, World!</p>"
+  document.getElementById("answer").innerHTML = "The count is : " + count
 }
