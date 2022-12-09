@@ -18,9 +18,9 @@ if (navigator.serviceWorker) {
 
 function count() {
   console.log("click")
-  let count = localStorage.getItem("number");
+  let count = localStorage.getItem("number")
   count++
-  localStorage.setItem("number", count);
+  localStorage.setItem("number", count)
   console.log(count)
 
   document.getElementById("answer").innerHTML = "The count is : " + count
