@@ -26,6 +26,8 @@ function count() {
   document.getElementById("answer").innerHTML = "The count is : " + count
 }
 
+// localstroage.count
+/*
 function reset() {
   console.log("clear count")
   let count = 0
@@ -34,3 +36,4 @@ function reset() {
 
   document.getElementById("answer").innerHTML = "The count is : " + count
 }
+*/
