@@ -20,7 +20,8 @@ function count() {
   if (localStorage.count) {
     console.log("click")
     localStorage.count = Number(localStorage.count) + 1
-    document.getElementById("answer").innerHTML = "The count is : " + localStorage.count
+    document.getElementById("answer").innerHTML =
+      "The count is : " + localStorage.count
     console.log(localStorage.count)
   } else {
     console.log("click")
