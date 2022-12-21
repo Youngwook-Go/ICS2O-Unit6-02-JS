@@ -17,6 +17,20 @@ if (navigator.serviceWorker) {
 }
 
 function count() {
+  if (localStorage.count) {
+    console.log("click")
+    localStorage.count = Number(localStorage.count) + 1
+    document.getElementById("answer").innerHTML = "The count is : " + localStorage.count
+    console.log(localStorage.count)
+  } else {
+    console.log("click")
+    localStorage.count = 1
+    console.log(localStorage.count)
+  }
+}
+
+/*
+function count() {
   console.log("click")
   let count = localStorage.getItem("number")
   count++
@@ -25,9 +39,9 @@ function count() {
 
   document.getElementById("answer").innerHTML = "The count is : " + count
 }
-
-// localstroage.count
-/*
+─────────────────────────────────────────────────────────────────────────
+localstroage.count
+─────────────────────────────────────────────────────────────────────────
 function reset() {
   console.log("clear count")
   let count = 0
